@@ -1,5 +1,5 @@
 {
-   "landingpage": "https://simran-srk.github.io/Silver-Steel/",
+  "landingpage": "https://simran-srk.github.io/Silver-Steel/",
   "name": "silver-steel",
   "version": "0.0.0",
   "scripts": {
@@ -9,8 +9,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:SilverSteel": "node dist/silver-steel/server/server.mjs",
-    "deploy": "gh-pages -d build",
-    "predeploy": "ng deploy"
+    "deploy": "ngh --dir=dist/silver-steel",
+    "predeploy": "ng build --configuration production --base-href /Silver-Steel/"
   },
   "private": true,
   "dependencies": {
